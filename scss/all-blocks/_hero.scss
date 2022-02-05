@@ -34,6 +34,18 @@
       color: #FFFFFF;
       margin-top:40px;
 
+      &__text::after{
+        content: "";
+        position: absolute;
+        background-image: url("./../../images/strelka_hero.svg");
+        background-repeat: no-repeat;
+        width: 415px;
+        height: 15px;
+        top: 50%;
+        left: 0;
+        transform: translate(-472px,-50%);
+      }
+
      }
      &__button{
       background: none;

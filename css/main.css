@@ -572,6 +572,19 @@ img {
   margin-top: 40px;
 }
 
+.hero__text__text::after {
+  content: "";
+  position: absolute;
+  background-image: url("./../../images/strelka_hero.svg");
+  background-repeat: no-repeat;
+  width: 415px;
+  height: 15px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-472px, -50%);
+          transform: translate(-472px, -50%);
+}
+
 .hero__button {
   background: none;
   border: 3px solid #FCB72B;
