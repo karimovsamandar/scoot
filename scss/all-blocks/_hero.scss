@@ -2,28 +2,48 @@
      
    &__container{
     height: 650px; 
-    background-image: url("./../../images/hero.png");
+    background-image: url("./../../images/hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 350px;
- }
-  
+ }  
+
     &__heading{
+      position: absolute;
       width: 500px;
       height: 112px;
+      left: 165px;
+      top: 249px;
       font-family: Space Mono;
       font-style: normal;
       font-weight: bold;
       font-size: 56px;
-      line-height: 56px;
+      line-height: 56px;      
       letter-spacing: -2.5px;
+       color: #FFFFFF;  
      } 
+
+     &__text{
+      position: absolute;
+      width: 405px;
+      height: 100px;
+      left: 260px;
+      top: 401px;
+      font-size: 15px;
+      line-height: 25px;
+      color: #FFFFFF;
+      margin-top:40px;
+
+     }
      &__button{
       background: none;
       border: 3px solid #FCB72B;
       background-color: #FCB72B;
       color: #fff;
       padding: 14px 39px;
+      margin-top:180px;
+      margin-left: 55px;
+      // margin-bottom: 152px;
 
       &:hover{
         border: 3px solid #FCB72B;
