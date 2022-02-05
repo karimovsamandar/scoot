@@ -76,6 +76,11 @@
     &__button{
         margin-left: 95px;
     }
+    &__button:hover{
+    opacity: 0;
+    border-radius: 2px solid #FCB72B;
+
+   }
 }
 
 // tablet devices ------------------------------------------------
