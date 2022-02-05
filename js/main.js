@@ -1,8 +1,7 @@
-elsFaqBtns = document.querySelectorAll('.faq__button');
-elsFaqItem = document.querySelectorAll('.faqs__item');
+var elHeader = document.querySelector(".header")
+var elBtn = document.querySelector(".header__btn")
 
-elsFaqBtns.forEach(function (btn) {
-  btn.addEventListener('click', function (evt) {console.log('hello');
-    btn.closest('.faqs__item').classList.toggle('faq--active');
-})
+
+elBtn.addEventListener("click", () => {
+    elHeader.classList.toggle("header--active")
 })

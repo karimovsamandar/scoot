@@ -4,36 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Scoot</title>
 </head>
 <body>
-    <header class="site__header">
-        <div class="container site__header__container">
-    
-          <a class="logo" href="index.html">
-            <img class="logo__img" src="./images/logo.svg" alt="logo of scoot" width="108" height="29">
-          </a>
-    
-    
-          <nav class="sitenav">
-            <ul class="sitenav__list">
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">About</a>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Location</a>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Careers</a>
-              </li>
-            </ul>
-          </nav>
-    
-          <a href="#" class="get-scootin btn">Get scootin</a>
-    
-        </div>
-      </header>
+    <!-- main -->
+    <main class="main">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__container">
+                    <h1 class="visually-hidden">
+                        Scooter
+                    </h1>
 
+                    <div class="header__wrapper">
+                        <a href="./index.html" class="header__logo-link">
+                            <img class="header__logo-img" src="./images/logo.svg" alt="logo"  width="108" height="28">
+                        </a>
+
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link header__nav-link__active">Home</a>
+                                </li>
+
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">About</a>
+                                </li>
+
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">Location</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <button class="header__button header__button-off" type="button">Get Scootin</button>
+
+                    <button type="button" class="header__btn">
+                        <img class="header__burger-img" src="./images/burger-menu.svg" alt="burger menu">
+                        <img class="header__close-img" src="./images/close.svg" alt="close">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- hero -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__box">
+                    <h2 class="visually-hidden">Scooter sharing</h2>
+
+                    <h3 class="hero__heading">
+                        Scooter sharing made simple
+                    </h3>
+
+                    <p class="hero__text">
+                        Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you're away!
+                    </p>
+
+                    <button class="header__button hero__button" type="button">Get Scootin</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- opportunities -->
+        <section class="opportunities">
+            <div class="container opportunities__container">
+                <h2 class="visually-hidden">Our opportunities</h2>
+                <ul class="opportunities__list">
+                    <li class="opportunities__item opportunities__item-1">
+                        <h3 class="opportunities__heading">Locate with app</h3>
+
+                        <p class="opportunities__text">
+                            Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+                        </p>
+                    </li>
+
+                    <li class="opportunities__item">
+                        <h3 class="opportunities__heading">Locate with app</h3>
+
+                        <p class="opportunities__text">
+                            Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+                        </p>
+                    </li>
+
+                    <li class="opportunities__item">
+                        <h3 class="opportunities__heading">Locate with app</h3>
+
+                        <p class="opportunities__text">
+                            Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>

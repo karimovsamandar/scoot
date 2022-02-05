@@ -1,76 +1,197 @@
-.hero{
-     
-   &__container{
-    height: 650px; 
-    background-image: url("./../../images/hero-bg.png");
+.hero {
+    margin-top: 97px;
+    margin-bottom: 160px;
+    background-image: url("./../images/hero-bg.jpg");
     background-repeat: no-repeat;
+    object-position: center;
     background-size: cover;
-    padding-top: 350px;
-    // position: relative;
- }  
+    min-height: 650px;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
 
-    &__heading{
-      position: absolute;
-      width: 500px;
-      height: 112px;
-      left: 165px;
-      top: 249px;
-      font-size: 56px;
-      line-height: 56px;      
-      letter-spacing: -2.5px;
-       color: #FFFFFF;  
-     } 
-
-     &__text{
-      display: block;
-      position: absolute;
-      width: 405px;
-      height: 100px;
-      left: 260px;
-      top: 401px;
-      font-size: 15px;
-      line-height: 25px;
-      color: #FFFFFF;
-      margin-top:40px;
-
-      &__text::after{
+    &::before{
+        z-index: -1;
+        position: absolute;
         content: "";
-        background-image: url("./../../images/left_strelka.svg");
-        display: block;
-        background-repeat: no-repeat;
-        width: 447px;
-        height: 138px;
-        left: 705px;
-        top: 451px;
-      }
-      &__text::before{
-        display: block;
-        content: "";
-        background-image: url("./../../images/right_strelka.svg");
-        background-repeat: no-repeat;
-        width: 450px;
-        height: 150px;
-        top: 50%;
-        left: 0;
-        transform: translate(445px,-8px);
-      }
-     }
-     &__button{
-      background: none;
-      border: 3px solid #FCB72B;
-      background-color: #FCB72B;
-      color: #fff;
-      padding: 14px 39px;
-      margin-top:180px;
-      margin-left: 55px;
-      // margin-bottom: 152px;
+        width: 100%;
+        height: 100%;
+        background-color: #2F3B59;
+        display: inline-block;
+        opacity: 0.6;
+    }
 
-      &:hover{
-        border: 3px solid #FCB72B;
-        box-sizing: border-box;
-        background: none;
-        color: #FCB72B;
+    &__container {
+        padding-top: 153px;
+        padding-bottom: 153px;
+    }
+
+    &__box {
+        max-width: 500px;
+        color: $white;
+    }
+
+    &__heading {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        z-index: 3;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        margin-left: 95px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+        position: relative;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 416px;
+            height: 15px;
+            background-image: url("./../images/hero-left.svg");
+            right: 100%;
+            top: calc(50%);
+            transform: translate(-57px, -8px);
+        }
+
+        &::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 451px;
+            height: 150px;
+            background-image: url("./../images/hero-right-arrow.svg");
+            left: 100%;
+            top: calc(50%);
+            transform: translate(57px, -8px);
+        }
+    }
+
+    &__button{
+        margin-left: 95px;
+    }
 }
 
+// tablet devices ------------------------------------------------
+@media only screen and (max-width:1030px) {
+    .hero {
+        // margin-top: 44px;
+        margin-bottom: 122px;
+        background-position: right center;
+
+        &__container {
+            padding-top: 137px;
+            padding-bottom: 217px;
+        }
+
+        &__box {
+            max-width: 573px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__heading {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            margin-left: 0;
+            margin-bottom: 32px;
+            position: relative;
+
+            &::before{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 416px;
+                height: 15px;
+                background-image: url("./../images/hero-left.svg");
+                right: 100%;
+                top: calc(50%);
+                transform: translate(-57px, -8px);
+                display: none;
+
+            }
+
+            &::after{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 451px;
+                height: 150px;
+                background-image: url("./../images/hero-right-arrow.svg");
+                left: 0;
+                bottom: 0;
+                transform: translate(-125px, 125px);
+
+
+            }
+        }
+
+        &__button{
+            margin-left: 0;
+        }
+    }
 }
+
+@media only screen and (max-width :730px ) {
+    .hero {
+        margin-top: 44px;
+        margin-bottom: 120px;
+
+        &__container {
+            padding-top: 115px;
+            padding-bottom: 179px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &__box {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        &__heading {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.78571px;
+        }
+
+        &__text {
+            margin-bottom: 32px;
+            position: relative;
+
+            &::after{
+                transform: translate(-345px, 130px);
+            }
+        }
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .hero{
+        background-image: url("./../images/hero-bg@2x.jpg");
+    }
 }
