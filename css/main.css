@@ -573,12 +573,12 @@ img {
 .hero__text__text::after {
   content: "";
   background-image: url("./../../images/left_strelka.svg");
+  display: block;
   background-repeat: no-repeat;
   width: 447px;
   height: 138px;
   left: 705px;
   top: 451px;
-  display: block;
 }
 
 .hero__text__text::before {
