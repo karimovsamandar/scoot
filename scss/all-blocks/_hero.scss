@@ -45,7 +45,17 @@
         left: 0;
         transform: translate(-472px,-50%);
       }
-
+      &__text::before{
+        content: "";
+        position: absolute;
+        background-image: url("./../../images/full_strelka_hero.svg");
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 150px;
+        top: 50%;
+        left: 0;
+        transform: translate(445px,-8px);
+      }
      }
      &__button{
       background: none;
