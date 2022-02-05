@@ -575,7 +575,7 @@ img {
 .hero__text__text::after {
   content: "";
   position: absolute;
-  background-image: url("./../../images/strelka_hero.svg");
+  background-image: url("./../../images/");
   background-repeat: no-repeat;
   width: 415px;
   height: 15px;
