@@ -866,6 +866,30 @@ img {
   margin-bottom: 40px;
 }
 
+.stages__item-2::before {
+  content: "";
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  -o-object-position: contain;
+     object-position: contain;
+  border-radius: 50%;
+  background-image: url("./../../images/scooter-stages.svg");
+  margin-bottom: 40px;
+}
+
+.stages__item-3::before {
+  content: "";
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  -o-object-position: contain;
+     object-position: contain;
+  border-radius: 50%;
+  background-image: url("./../../images/delivery-stages.svg");
+  margin-bottom: 40px;
+}
+
 .stages__item + .stages__item {
   margin-left: 30px;
 }
