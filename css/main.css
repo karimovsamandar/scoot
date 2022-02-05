@@ -551,9 +551,6 @@ img {
   height: 112px;
   left: 165px;
   top: 249px;
-  font-family: Space Mono;
-  font-style: normal;
-  font-weight: bold;
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -2.5px;
@@ -561,6 +558,7 @@ img {
 }
 
 .hero__text {
+  display: block;
   position: absolute;
   width: 405px;
   height: 100px;
@@ -574,21 +572,19 @@ img {
 
 .hero__text__text::after {
   content: "";
-  position: absolute;
-  background-image: url("./../../images/");
+  background-image: url("./../../images/left_strelka.svg");
   background-repeat: no-repeat;
-  width: 415px;
-  height: 15px;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(-472px, -50%);
-          transform: translate(-472px, -50%);
+  width: 447px;
+  height: 138px;
+  left: 705px;
+  top: 451px;
+  display: block;
 }
 
 .hero__text__text::before {
+  display: block;
   content: "";
-  position: absolute;
-  background-image: url("./../../images/full_strelka_hero.svg");
+  background-image: url("./../../images/right_strelka.svg");
   background-repeat: no-repeat;
   width: 450px;
   height: 150px;
