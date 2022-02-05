@@ -539,6 +539,7 @@ img {
 
 .hero__container {
   height: 650px;
+  background-image: url("./../../images/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 350px;
