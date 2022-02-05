@@ -20,10 +20,19 @@
       line-height: 56px;
       letter-spacing: -2.5px;
      } 
-     &__buuton{
-      width: 180px;
-      height: 53px;
-      left: 260px;
-      top: 541px;
-     }    
+     &__button{
+      background: none;
+      border: 3px solid #FCB72B;
+      background-color: #FCB72B;
+      color: #fff;
+      padding: 14px 39px;
+
+      &:hover{
+        border: 3px solid #FCB72B;
+        box-sizing: border-box;
+        background: none;
+        color: #FCB72B;
+}
+
+}
 }

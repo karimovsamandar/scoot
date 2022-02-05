@@ -556,10 +556,19 @@ img {
   letter-spacing: -2.5px;
 }
 
-.hero__buuton {
-  width: 180px;
-  height: 53px;
-  left: 260px;
-  top: 541px;
+.hero__button {
+  background: none;
+  border: 3px solid #FCB72B;
+  background-color: #FCB72B;
+  color: #fff;
+  padding: 14px 39px;
+}
+
+.hero__button:hover {
+  border: 3px solid #FCB72B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  color: #FCB72B;
 }
 /*# sourceMappingURL=main.css.map */
