@@ -1,0 +1,413 @@
+.features{
+    &__container {
+        max-width: 1560px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 160px;
+        overflow: hidden;
+    }
+    
+    &__first {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 165px;
+    }
+    
+    &__left-first {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            width: 445px;
+            height: 445px;
+            border-radius: 50%;
+            background-color: #E5ECF4;
+            top: 3%;
+            right: calc(100% + 150px);
+        }
+    }
+    
+    &__img-first {
+        width: 445px;
+        height: 445px;
+        object-fit: contain;
+        border-radius: 50%;
+        margin-right: 220px;
+    }
+    
+    &__right-first {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            width: 355px;
+            height: 150px;
+            top: 30px;
+            right: calc(100% + 555px);
+            background-image: url("./../../images/wallet-line.svg");
+            transform: rotateY(180deg);
+        }
+    }
+    
+    &__heading-first {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        width: 445px;
+        height: 96px;
+        text-align: start;
+        margin-top: 66px;
+        margin-bottom: 24px;
+    }
+    
+    &__text-first {
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        text-align: start;
+        width: 445px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    
+    &__second {
+        display: flex;
+        margin-left: 220px;
+        margin-top: 160px;
+    }
+    
+    &__left-second {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            height: 150px;
+            width: 360px;
+            top: calc(15%);
+            left: calc(100% + 500px);
+            background-image: url("./../../images/wallet-line.svg");
+            z-index: 3;
+            
+        }
+    }
+    
+    &__heading-second {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        width: 445px;
+        height: 96px;
+        text-align: start;
+        margin-top: 66px;
+        margin-bottom: 24px;
+    }
+    
+    &__text-second {
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        text-align: start;
+        width: 445px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    
+    &__right-second {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            width: 445px;
+            height: 445px;
+            border-radius: 50%;
+            background-color: #E5ECF4;
+            bottom: 3%;
+            left: calc(100% + 150px);
+        }
+    }
+    
+    &__img-second {
+        width: 445px;
+        height: 445px;
+        object-fit: contain;
+        border-radius: 50%;
+        margin-left: 165px;
+    }
+    
+    &__heading-center {
+        display: none;
+    }
+    
+    &__text-center {
+        display: none;
+    }
+    
+    &__button-center {
+        display: none;
+    }
+    
+    
+    @media only screen and (max-width: 1100px) {
+        .features {
+            
+            &__container {
+                max-width: 768px;
+                margin-bottom: 104px;
+            }
+            
+            &__first {
+                display: block;
+                margin-right: 0%;
+            }
+            
+            &__left-first {
+                
+                &::before {
+                    top: 0%;
+                    right: 85%;
+                }
+            }
+            
+            &__img-first {
+                margin-right: 0%;
+                margin-left: 165px;
+            }
+            
+            &__right-first {
+                
+                &::before {
+                    left: 0%;
+                    top: calc(-175%);
+                }
+            }
+            
+            &__heading-first {
+                width: 457px;
+                text-align: center;
+                margin-top: 64px;
+                margin-bottom: 40px;
+                margin-left: 165px;
+            }
+            
+            &__text-first {
+                text-align: center;
+                width: 573px;
+                height: 75px;
+                margin-bottom: 40px;
+                margin-left: 97px;
+            }
+            
+            &__button-first {
+                margin-left: 294px;
+            }
+            
+            &__second {
+                display: block;
+                margin-left: 0%;
+                margin-top: 120px;
+            }
+            
+            &__right-second {
+                
+                &::before {
+                    bottom: 12%;
+                    left: 85%;
+                }
+            }
+            
+            &__img-second {
+                margin-left: 165px;
+                margin-bottom: 64px;
+            }
+            
+            &__center-third {
+                display: inline-block;
+                position: relative;
+                
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: calc(-80% - 200px);
+                    left: 65%;
+                    width: 355px;
+                    height: 150px;
+                    background-image: url("./../../images/wallet-line.svg");
+                }
+            }
+            
+            &__heading-center {
+                display: block;
+                font-family: Space Mono;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: -2.14286px;
+                color: #495567;
+                width: 457px;
+                margin-left: 155px;
+                margin-bottom: 40px;
+            }
+            
+            &__text-center {
+                display: block;
+                font-family: Lexend Deca;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                color: #939CAA;
+                width: 573px;
+                margin-left: 97px;
+                margin-bottom: 40px;
+            }
+            
+            &__button-center {
+                display: block;
+                margin-left: 294px;
+            } 
+            
+            &__left-second {
+                display: none;
+            }
+            
+            &__heading-second {
+                display: none;
+            }
+            
+            &__text-second {
+                display: none;
+            }
+            
+            &__button-second {
+                display: none;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 750px) {
+        .features {
+            
+            &__container {
+                max-width: 375px;
+                margin-bottom: 120px;
+            }
+            
+            &__first {
+                margin-right: 0%;
+                margin-left: 32px;
+            }
+            
+            &__left-first {
+                
+                &::before {
+                    display: none;
+                }
+            }
+            
+            &__img-first {
+                margin-right: 0%;
+                margin-left: 0%;
+                width: 311px;
+                height: 311px;
+            }
+            
+            &__right-first {
+                
+                &::before {
+                    left: calc(-35%);
+                    top: calc(-100% - 45px);
+                }
+            }
+            
+            &__heading-first {
+                width: 311px;
+                margin-top: 56px;
+                margin-bottom: 0;
+                margin-left: 0;
+                font-size: 32px;
+                line-height: 32px;
+            }
+            
+            &__text-first {
+                width: 311px;
+                height: 75px;
+                margin-left: 0;
+                margin-bottom: 112px;
+            }
+            
+            &__button-first {
+                margin-left: 66px;
+            }
+            
+            &__second {
+                padding-top: 120px;
+                display: block;
+                margin-left: 32px;
+                margin-top: 120px;
+            }
+            
+            &__right-second {
+                
+                &::before {
+                    display: none;
+                }
+            }
+            
+            &__img-second {
+                margin-left: 0%;
+                margin-bottom: 64px;
+                width: 311px;
+                height: 311px;
+            }
+            
+            &__center-third {
+                
+                &::before {
+                    top: calc(-50% - 200px);
+                    left: 45%;
+                }
+            }
+            
+            &__heading-center {
+                font-size: 32px;
+                line-height: 32px;
+                letter-spacing: -1.42857px;
+                width: 311px;
+                margin-left: 0;
+                margin-bottom: 32px;
+            }
+            
+            &__text-center {
+                width: 311px;
+                margin-left: 0;
+                margin-bottom: 32px;
+            }
+            
+            &__button-center {
+                margin-left: 66px;
+            } 
+        }    
+    }
+}

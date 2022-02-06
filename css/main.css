@@ -1122,7 +1122,6 @@ img {
 
 .easy__button-right {
   display: none;
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1144,7 +1143,6 @@ img {
   }
   .easy__button-left {
     display: none;
-    text-decoration: none;
   }
   .easy__center {
     margin-left: 164px;
@@ -1191,7 +1189,6 @@ img {
   .easy__button-right {
     display: block;
     margin-left: 197px;
-    text-decoration: none;
   }
 }
 
@@ -1230,7 +1227,365 @@ img {
   }
   .easy__button-right {
     margin-left: 66px;
-    text-decoration: none;
+  }
+}
+
+.features__container {
+  max-width: 1560px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+  overflow: hidden;
+}
+
+.features__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 165px;
+}
+
+.features__left-first {
+  position: relative;
+}
+
+.features__left-first::before {
+  content: "";
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background-color: #E5ECF4;
+  top: 3%;
+  right: calc(100% + 150px);
+}
+
+.features__img-first {
+  width: 445px;
+  height: 445px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  margin-right: 220px;
+}
+
+.features__right-first {
+  position: relative;
+}
+
+.features__right-first::before {
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 150px;
+  top: 30px;
+  right: calc(100% + 555px);
+  background-image: url("./../../images/wallet-line.svg");
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.features__heading-first {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  width: 445px;
+  height: 96px;
+  text-align: start;
+  margin-top: 66px;
+  margin-bottom: 24px;
+}
+
+.features__text-first {
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  text-align: start;
+  width: 445px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.features__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 220px;
+  margin-top: 160px;
+}
+
+.features__left-second {
+  position: relative;
+}
+
+.features__left-second::before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 360px;
+  top: calc(15%);
+  left: calc(100% + 500px);
+  background-image: url("./../../images/wallet-line.svg");
+  z-index: 3;
+}
+
+.features__heading-second {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  width: 445px;
+  height: 96px;
+  text-align: start;
+  margin-top: 66px;
+  margin-bottom: 24px;
+}
+
+.features__text-second {
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  text-align: start;
+  width: 445px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.features__right-second {
+  position: relative;
+}
+
+.features__right-second::before {
+  content: "";
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background-color: #E5ECF4;
+  bottom: 3%;
+  left: calc(100% + 150px);
+}
+
+.features__img-second {
+  width: 445px;
+  height: 445px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  margin-left: 165px;
+}
+
+.features__heading-center {
+  display: none;
+}
+
+.features__text-center {
+  display: none;
+}
+
+.features__button-center {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .features .features__container {
+    max-width: 768px;
+    margin-bottom: 104px;
+  }
+  .features .features__first {
+    display: block;
+    margin-right: 0%;
+  }
+  .features .features__left-first::before {
+    top: 0%;
+    right: 85%;
+  }
+  .features .features__img-first {
+    margin-right: 0%;
+    margin-left: 165px;
+  }
+  .features .features__right-first::before {
+    left: 0%;
+    top: calc(-175%);
+  }
+  .features .features__heading-first {
+    width: 457px;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    margin-left: 165px;
+  }
+  .features .features__text-first {
+    text-align: center;
+    width: 573px;
+    height: 75px;
+    margin-bottom: 40px;
+    margin-left: 97px;
+  }
+  .features .features__button-first {
+    margin-left: 294px;
+  }
+  .features .features__second {
+    display: block;
+    margin-left: 0%;
+    margin-top: 120px;
+  }
+  .features .features__right-second::before {
+    bottom: 12%;
+    left: 85%;
+  }
+  .features .features__img-second {
+    margin-left: 165px;
+    margin-bottom: 64px;
+  }
+  .features .features__center-third {
+    display: inline-block;
+    position: relative;
+  }
+  .features .features__center-third::before {
+    position: absolute;
+    content: "";
+    top: calc(-80% - 200px);
+    left: 65%;
+    width: 355px;
+    height: 150px;
+    background-image: url("./../../images/wallet-line.svg");
+  }
+  .features .features__heading-center {
+    display: block;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    width: 457px;
+    margin-left: 155px;
+    margin-bottom: 40px;
+  }
+  .features .features__text-center {
+    display: block;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #939CAA;
+    width: 573px;
+    margin-left: 97px;
+    margin-bottom: 40px;
+  }
+  .features .features__button-center {
+    display: block;
+    margin-left: 294px;
+  }
+  .features .features__left-second {
+    display: none;
+  }
+  .features .features__heading-second {
+    display: none;
+  }
+  .features .features__text-second {
+    display: none;
+  }
+  .features .features__button-second {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .features .features__container {
+    max-width: 375px;
+    margin-bottom: 120px;
+  }
+  .features .features__first {
+    margin-right: 0%;
+    margin-left: 32px;
+  }
+  .features .features__left-first::before {
+    display: none;
+  }
+  .features .features__img-first {
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 311px;
+    height: 311px;
+  }
+  .features .features__right-first::before {
+    left: calc(-35%);
+    top: calc(-100% - 45px);
+  }
+  .features .features__heading-first {
+    width: 311px;
+    margin-top: 56px;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .features .features__text-first {
+    width: 311px;
+    height: 75px;
+    margin-left: 0;
+    margin-bottom: 112px;
+  }
+  .features .features__button-first {
+    margin-left: 66px;
+  }
+  .features .features__second {
+    padding-top: 120px;
+    display: block;
+    margin-left: 32px;
+    margin-top: 120px;
+  }
+  .features .features__right-second::before {
+    display: none;
+  }
+  .features .features__img-second {
+    margin-left: 0%;
+    margin-bottom: 64px;
+    width: 311px;
+    height: 311px;
+  }
+  .features .features__center-third::before {
+    top: calc(-50% - 200px);
+    left: 45%;
+  }
+  .features .features__heading-center {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+    width: 311px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .features .features__text-center {
+    width: 311px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .features .features__button-center {
+    margin-left: 66px;
   }
 }
 /*# sourceMappingURL=main.css.map */
