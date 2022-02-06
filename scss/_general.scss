@@ -36,7 +36,7 @@ body{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
 .main{
     flex-grow: 1;
@@ -46,9 +46,9 @@ h1, h2, h3, h4, p{
     margin: 0;
 }
 
-    p{
-        font-family: 'Lexend Deca', Arial, sans-serif;
-    }
+p{
+    font-family: 'Lexend Deca', Arial, sans-serif;
+}
 
 ul, ol{
     list-style-type: none;
@@ -61,28 +61,29 @@ img{
 }
 
 // .link {
-//     min-width: 200px;
-//     max-width: 600px;
-//     text-align: center;
-//     text-decoration: none;
-//     font-family: Fraunces, Arial, sans-serif;
-//     font-weight: 900;
-//     font-size: 18px;
-//     line-height: 25px;
-//     color: $light_cream;
-//     background: $dark_cyan;
-//     border-radius: 6px;
-//     padding: 15px 20px;
-//     display: inline-block;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-
-//     &:hover{
-//         background: #66D2CF;
-//     }
-
-//     &:active{
-//         background: $dark_cyan;
-//     }
-// }
+    //     min-width: 200px;
+    //     max-width: 600px;
+    //     text-align: center;
+    //     text-decoration: none;
+    //     font-family: Fraunces, Arial, sans-serif;
+    //     font-weight: 900;
+    //     font-size: 18px;
+    //     line-height: 25px;
+    //     color: $light_cream;
+    //     background: $dark_cyan;
+    //     border-radius: 6px;
+    //     padding: 15px 20px;
+    //     display: inline-block;
+    //     white-space: nowrap;
+    //     overflow: hidden;
+    //     text-overflow: ellipsis;
+    
+    //     &:hover{
+        //         background: #66D2CF;
+        //     }
+        
+        //     &:active{
+            //         background: $dark_cyan;
+            //     }
+            // }
+            
