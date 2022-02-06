@@ -888,7 +888,7 @@ img {
   display: inline-block;
   width: 96px;
   height: 96px;
-  background-image: url("./../../images/scooter-stages.svg;");
+  background-image: url("./../../images/scooter-stages.svg");
   -o-object-position: contain;
      object-position: contain;
   border-radius: 50%;
@@ -1027,6 +1027,210 @@ img {
     text-align: center;
     letter-spacing: -0.892857px;
     margin-bottom: 24px;
+  }
+}
+
+.easy__container {
+  max-width: 1560px;
+  width: 100%;
+  margin-bottom: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.easy__main {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.easy__left {
+  margin-left: 165px;
+  margin-top: 100px;
+  margin-right: 220px;
+}
+
+.easy__heading-left {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin-bottom: 40px;
+  width: 445px;
+  height: 96px;
+}
+
+.easy__text-left {
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  width: 445px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.easy__center {
+  position: relative;
+}
+
+.easy__center::before {
+  content: "";
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  background-color: #E5ECF4;
+  top: 0;
+  left: calc(100% + 150px);
+  border-radius: 50%;
+}
+
+.easy__line {
+  position: relative;
+}
+
+.easy__line::after {
+  content: "";
+  top: 60%;
+  left: -11%;
+  position: absolute;
+  background-image: url("./../img/girl-line.svg");
+  width: 735px;
+  height: 150px;
+}
+
+.easy__img {
+  border-radius: 50%;
+}
+
+.easy__right {
+  display: none;
+}
+
+.easy__heading-right {
+  display: none;
+}
+
+.easy__text-right {
+  display: none;
+}
+
+.easy__btn-right {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sidebar__container {
+    max-width: 768px;
+    margin-bottom: 120px;
+  }
+  .sidebar__main {
+    display: block;
+  }
+  .sidebar__left {
+    display: none;
+  }
+  .sidebar__heading-left {
+    display: none;
+  }
+  .sidebar__text-left {
+    display: none;
+  }
+  .sidebar__btn-left {
+    display: none;
+  }
+  .sidebar__center {
+    margin-left: 164px;
+    margin-bottom: 56px;
+  }
+  .sidebar__center::before {
+    top: 0;
+    left: calc(50% + 200px);
+  }
+  .sidebar__line::after {
+    bottom: 5%;
+    left: -28%;
+  }
+  .sidebar__right {
+    display: inline-block;
+    margin-left: 97px;
+  }
+  .sidebar__heading-right {
+    display: block;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    width: 457px;
+    margin-left: 58px;
+    margin-bottom: 40px;
+  }
+  .sidebar__text-right {
+    display: block;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #939CAA;
+    width: 573px;
+    margin-bottom: 40px;
+  }
+  .sidebar__btn-right {
+    display: block;
+    margin-left: 197px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .easy__container {
+    max-width: 375px;
+  }
+  .easy__center {
+    margin-left: 32px;
+  }
+  .easy__center::before {
+    display: none;
+  }
+  .easy__line::after {
+    top: 55%;
+    left: 0;
+  }
+  .easy__img {
+    width: 311px;
+    height: 311px;
+  }
+  .easy__right {
+    margin-left: 32px;
+  }
+  .easy__heading-right {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+    width: 311px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .easy__text-right {
+    width: 311px;
+    margin-bottom: 32px;
+  }
+  .easy__btn-right {
+    margin-left: 66px;
   }
 }
 /*# sourceMappingURL=main.css.map */
