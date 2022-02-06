@@ -1,123 +1,139 @@
 .footer {
-    background-color: #333A44;
-    padding-top: 35px;
-    padding-bottom: 35px;
-   
+    
     &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__wrapper {
-        max-width: 417px;
+        max-width: 1560px;
         width: 100%;
+        min-height:  96px;
+        background-color: #333A44;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    &__main {
+        max-width: 1110px;
+        width: 100%;
+        margin-left: 168px;
+        margin-right: 165px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
-
-    &__logo-link{
-        display: inline-block;
+    
+    &__logo {
+        padding-top: 35px;
+        margin-right: 59px;
     }
-
-    &__logo-img{
-        width: 108px;
-        height: 28px;
+    
+    &__logo-img {
+        width: 109px;
+        height: 29px;
+        object-fit: contain;
     }
-
-   
-
-    &__nav-list {
+    
+    &__nav {
+        padding-right: 571px;
+        padding-top: 36px;
+    }
+    
+    &__list-nav {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
-
-  
-
-    &__nav-item + &__nav-item {
+    
+    &__item-nav + &__item-nav {
         margin-left: 32px;
     }
-
-    &__nav-link {
-        text-decoration: none;
+    
+    &__link-nav {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
         font-size: 15px;
         line-height: 25px;
         color: #939CAA;
-        transition: all 0.2s ease-in-out;
-
-        &:hover{
-            color: #FCB72B;
-        }
     }
-
-    &__social-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     
-    &__social-item + &__social-item {
+    &__link-nav:hover {
+        color: #FCB72B;
+    }
+    
+    &__icon {
+        padding-top: 36px;
+    }
+    
+    &__list-icon {
+        display: flex;
+    }
+    
+    &__item-icon + &__item-icon {
         margin-left: 24px;
     }
+    
+    &__link-icon {
+        color: #FCB72B;
+    }
+    
+    &__link-icon:hover {
+        color: #E5ECF4;
+    }
+}
 
-    &__social-img {
-        width: 24px;
-        height: 24px;
-        object-fit: contain;
-        &:hover{
-            transform: scale(1);
-            path{
-                fill: white;
-            }
+@media only screen and (max-width: 1100px){
+    .footer {
+        
+        &__container {
+            max-width: 768px;
+        }
+        
+        &__main {
+            max-width: 690px;
+            margin-left: 39px;
+            margin-right: 36px;
+        }
+        
+        &__nav {
+            padding-right: 153px;
         }
     }
 }
 
-
-// mobile devices
-.footer{
-    @media only screen and (max-width :730px ) {
-        padding-top: 64px;
-        padding-bottom: 88px;
-
+@media only screen and (max-width: 750px){
+    .footer {
+        
         &__container {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
+            max-width: 375px;
+            min-height:  438px;
         }
-
-        &__wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
+        
+        &__main {
+            max-width: 120px;
+            margin-left: 128px;
+            margin-right: 127px;
+            display: block;
         }
-
-        &__logo-link{
+        
+        &__logo {
+            padding-top: 64px;
+            margin-right: 0;
             margin-bottom: 41px;
         }
-
-
-        &__nav-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 85px;
+        
+        &__nav {
+            padding-right: 0;
+            padding-top: 0;
+            text-align: center;
         }
-
-        &__nav-item + &__nav-item {
+        
+        &__list-nav {
+            display: block;
+        }
+        
+        &__item-nav + &__item-nav {
             margin-left: 0;
             margin-top: 16px;
         }
 
-
-        &__social-item + &__social-item {
-            margin-left: 24px;
+        
+        &__icon {
+            padding-top: 87px;
         }
 
     }
-  } 
+}
