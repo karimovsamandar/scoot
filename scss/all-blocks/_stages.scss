@@ -9,61 +9,205 @@
 
     &__item {
         max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+        width: 100%;
+        position: relative;
 
-    &__item-1::before{
-        content: "";
-        display: inline-block;
-        width: 96px;
-        height: 96px;
-        object-position: contain;
-        border-radius: 50%;
-        background-image: url("./../images/phone-stages.svg");
-        margin-bottom: 40px;
-
-    }
-    &__item-2::before{
-        content: "";
-        display: inline-block;
-        width: 96px;
-        height: 96px;
-        object-position: contain;
-        border-radius: 50%;
-        background-image: url("./../../images/scooter-stages.svg");
-        margin-bottom: 40px;
+        &::after{
+            content: "";
+            position: absolute;
+            object-position: contain;
+            display: inline-block;
+            width: 512px;
+            height: 10px;
+            background-image: url("./../images/stages-line.svg");
+            top: 0;
+            right: 100%;
+            transform: translate(10px, 48px);
+            z-index: -1;
+        }
 
     }
 
-    &__item-3::before{
-        content: "";
-        display: inline-block;
-        width: 96px;
-        height: 96px;
-        object-position: contain;
-        border-radius: 50%;
-        background-image: url("./../../images/delivery-stages.svg");
-        margin-bottom: 40px;
-
-    }
-    &__item + &__item{
+    &__item + &__item {
         margin-left: 30px;
     }
 
+    &__item-1 {
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            background-image: url("./../../images/phone-stages.svg");
+            object-position: contain;
+            border-radius: 50%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item-2 {
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            background-image: url("./../../images/scooter-stages.svg;");
+            object-position: contain;
+            border-radius: 50%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item-3 {
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 96px;
+            height: 96px;
+            background-image: url("./../../images/delivery-stages.svg");
+            object-position: contain;
+            border-radius: 50%;
+            margin-bottom: 40px;
+        }
+    }
+
+
     &__heading {
-        font-weight: bold;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: -1.07143px;
-        color: $dark-navy;
+        color: #495567;
         margin-bottom: 27px;
     }
 
     &__text {
         font-size: 15px;
         line-height: 25px;
-        color: $dim-grey;
+        color: #939CAA;
     }
+
+
+
+
+// tablet deveces ---------------------------------------------------
+
+@media only screen and (max-width :1030px ) {
+    .opportunities {
+        margin-bottom: 145px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__item {
+            max-width: 573px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            &::after{
+                width: 10px;
+                height: 512px;
+                bottom: 100%;
+                right: 100%;
+                transform: translate(48px, -512px);
+            }
+
+        }
+
+        &__item + &__item {
+            margin-left: 0px;
+            margin-top: 40px;
+        }
+
+
+        &__item-wrapper {
+            max-width: 398px;
+            width: 100%;
+        }
+    }
+}
+
+
+
+// Mobile devices -------------------------------------------------
+@media only screen and (max-width :560px ) {
+    .stages {
+        margin-bottom: 120px;
+
+        &__container{
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &__list {
+            text-align: center;
+        }
+
+        &__item {
+            flex-direction: column;
+            justify-content: start;
+
+            &::after{
+                display: none;
+            }
+        }
+
+        &__item + &__item {
+            margin-top: 48px;
+        }
+
+        &__item-1 {
+
+            &::before{
+                width: 56px;
+                height: 56px;
+                margin-bottom: 20px;
+                background-size: 56px 56px;
+            }
+        }
+
+        &__item-2 {
+
+            &::before{
+                content: "";
+                width: 56px;
+                height: 56px;
+                background-size: 56px 56px;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__item-3 {
+
+            &::before{
+                width: 56px;
+                height: 56px;
+                background-size: 56px 56px;
+                margin-bottom: 24px;
+            }
+        }
+
+        &__item-wrapper {
+            max-width: 398px;
+            width: 100%;
+        }
+
+        &__heading {
+            font-size: 20px;
+            color: $dark-navy;
+            text-align: center;
+            letter-spacing: -0.892857px;
+            margin-bottom: 24px;
+        }
+    }
+}
 }

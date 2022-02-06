@@ -847,16 +847,28 @@ img {
 
 .stages__item {
   max-width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.stages__item::after {
+  content: "";
+  position: absolute;
+  -o-object-position: contain;
+     object-position: contain;
+  display: inline-block;
+  width: 512px;
+  height: 10px;
+  background-image: url("./../images/stages-line.svg");
+  top: 0;
+  right: 100%;
+  -webkit-transform: translate(10px, 48px);
+          transform: translate(10px, 48px);
+  z-index: -1;
+}
+
+.stages__item + .stages__item {
+  margin-left: 30px;
 }
 
 .stages__item-1::before {
@@ -864,10 +876,10 @@ img {
   display: inline-block;
   width: 96px;
   height: 96px;
+  background-image: url("./../../images/phone-stages.svg");
   -o-object-position: contain;
      object-position: contain;
   border-radius: 50%;
-  background-image: url("./../images/phone-stages.svg");
   margin-bottom: 40px;
 }
 
@@ -876,10 +888,10 @@ img {
   display: inline-block;
   width: 96px;
   height: 96px;
+  background-image: url("./../../images/scooter-stages.svg;");
   -o-object-position: contain;
      object-position: contain;
   border-radius: 50%;
-  background-image: url("./../../images/scooter-stages.svg");
   margin-bottom: 40px;
 }
 
@@ -888,19 +900,14 @@ img {
   display: inline-block;
   width: 96px;
   height: 96px;
+  background-image: url("./../../images/delivery-stages.svg");
   -o-object-position: contain;
      object-position: contain;
   border-radius: 50%;
-  background-image: url("./../../images/delivery-stages.svg");
   margin-bottom: 40px;
 }
 
-.stages__item + .stages__item {
-  margin-left: 30px;
-}
-
 .stages__heading {
-  font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -1.07143px;
@@ -912,5 +919,114 @@ img {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+}
+
+@media only screen and (max-width: 1030px) {
+  .stages .opportunities {
+    margin-bottom: 145px;
+  }
+  .stages .opportunities__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stages .opportunities__item {
+    max-width: 573px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .stages .opportunities__item::after {
+    width: 10px;
+    height: 512px;
+    bottom: 100%;
+    right: 100%;
+    -webkit-transform: translate(48px, -512px);
+            transform: translate(48px, -512px);
+  }
+  .stages .opportunities__item + .stages .opportunities__item {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .stages .opportunities__item-wrapper {
+    max-width: 398px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .stages .stages {
+    margin-bottom: 120px;
+  }
+  .stages .stages__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .stages .stages__list {
+    text-align: center;
+  }
+  .stages .stages__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .stages .stages__item::after {
+    display: none;
+  }
+  .stages .stages__item + .stages .stages__item {
+    margin-top: 48px;
+  }
+  .stages .stages__item-1::before {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+    background-size: 56px 56px;
+  }
+  .stages .stages__item-2::before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+    margin-bottom: 24px;
+  }
+  .stages .stages__item-3::before {
+    width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+    margin-bottom: 24px;
+  }
+  .stages .stages__item-wrapper {
+    max-width: 398px;
+    width: 100%;
+  }
+  .stages .stages__heading {
+    font-size: 20px;
+    color: #495567;
+    text-align: center;
+    letter-spacing: -0.892857px;
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
