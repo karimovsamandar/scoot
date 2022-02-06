@@ -1,19 +1,18 @@
 .easy{
-    
     &__container {
         max-width: 1560px;
         width: 100%;
         margin-bottom: 160px;
         margin-left: auto;
         margin-right: auto;
+        
+    }
+    
+    &__main-girl {
         display: flex;
     }
     
-    &__main {
-        flex-direction: row-reverse;
-    }
-    
-    &__left {
+    &__girl-left {
         margin-left: 165px;
         margin-top: 100px;
         margin-right: 220px;
@@ -67,7 +66,7 @@
             top: 60%;
             left: -11%;
             position: absolute;
-            background-image: url('./../img/girl-line.svg');
+            background-image: url('./../../images/girl-line.svg');
             width: 735px;
             height: 150px;
         }
@@ -77,7 +76,7 @@
         border-radius: 50%;
     }
     
-    &__right {
+    &__girl-right {
         display: none;
     }
     
@@ -89,13 +88,13 @@
         display: none;
     }
     
-    &__btn-right {
+    &__button-right {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .sidebar {
+    .easy {
         
         &__container {
             max-width: 768px;
@@ -118,7 +117,7 @@
             display: none;
         }
         
-        &__btn-left {
+        &__button-left {
             display: none;
         }
         
@@ -140,7 +139,7 @@
             }
         }
         
-        &__right {
+        &__girl-right {
             display: inline-block;
             margin-left: 97px;
         }
@@ -173,7 +172,7 @@
             margin-bottom: 40px;
         }
         
-        &__btn-right {
+        &__button-right {
             display: block;
             margin-left: 197px;
         }
@@ -207,7 +206,7 @@
             height: 311px;
         }
         
-        &__right {
+        &__girl-right {
             margin-left: 32px;
         }
         
@@ -225,7 +224,7 @@
             margin-bottom: 32px;
         }
         
-        &__btn-right {
+        &__button-right {
             margin-left: 66px;
         }
     }

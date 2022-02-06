@@ -5,13 +5,13 @@
     width: 100vw;
     z-index: 999;
     background-color: $white;
-
+    
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+    
     &__wrapper {
         display: flex;
         align-items: center;
@@ -19,25 +19,25 @@
         max-width: 415px;
         width: 100%;
     }
-
+    
     &__logo-link {
         text-decoration: none;
     }
-
+    
     &__logo-img {
         display: inline-block;
     }
-
+    
     &__nav-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+    
     &__nav-item + &__nav-item {
         margin-left: 32px;
     }
-
+    
     &__nav-link {
         text-decoration: none;
         font-weight: bold;
@@ -45,20 +45,20 @@
         line-height: 25px;
         color: $dim-grey;
         transition: all 0.2s ease-in-out;
-
+        
         &:hover{
             color: $yellow;
         }
     }
-
+    
     &__nav-link__active{
         box-shadow: 0 1px $yellow;
     }
-
+    
     &__nav-btn{
         display: none;
     }
-
+    
     &__button{
         border: 3px solid $yellow;
         background-color: $yellow;
@@ -73,30 +73,30 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-
+        
         &:hover{
             color: #FCB72B;
             background-color: $white;
         }
-
+        
         &:active{
             opacity: 0.7;
         }
     }
-
+    
     &__btn {
         border: none;
         background: none;
         display: none;
     }
-
+    
     &__burger-img {
         display: inline-block;
         width: 20px;
         height: 16px;
         object-fit: contain;
     }
-
+    
     &__close-img{
         display: none;
         width: 18px;
@@ -112,7 +112,7 @@
             left: calc(50%);
             transform: translateX(-38px);
         }
-
+        
         &__nav {
             position: absolute;
             top: 100%;
@@ -122,11 +122,11 @@
             background-color: #00000080;
             display: none;
         }
-
+        
         &--active &__nav{
             display: block;
         }
-
+        
         &__nav-list {
             background-color: #333A44;
             display: flex;
@@ -137,18 +137,18 @@
             max-width: 256px;
             height: 100%;
         }
-
+        
         &__nav-item + &__nav-item{
             margin-left: 0;
             margin-top: 32px;
         }
-
+        
         &__nav-link {
             font-size: 18px;
             line-height: 25px;
             color: $light-grey;
         }
-
+        
         &__button-off {
             position: absolute;
             bottom: 0;
@@ -156,21 +156,21 @@
             left: 32px;
             display: none;
         }
-
+        
         &--active &__button{
             display: inline-block;
         }
-
+        
         &__btn {
             display: inline-block;
             position: absolute;
             left: 20px;
         }
-
+        
         &--active &__burger-img {
             display: none;
         }
-
+        
         &--active &__close-img {
             display: inline-block;
         }
