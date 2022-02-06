@@ -1,6 +1,6 @@
 .sign-up {
     background-color:#495567;
-    background-image: url("./../images/sign-up.svg");
+    background-image: url("./../../images/s");
     background-position: calc(50% + 200px) 150px;
     background-repeat: no-repeat;
     background-size: auto;
@@ -20,7 +20,7 @@
         color: $white;
     }
 
-    &__right-side {
+    &__right {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -86,7 +86,7 @@
             margin-bottom: 40px;
         }
 
-        &__right-side {
+        &__right {
             display: flex;
             justify-content: space-between;
             align-items: center;
